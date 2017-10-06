@@ -5,7 +5,7 @@
  * A dynamic, browser-based visualization library.
  *
  * @version 4.20.1
- * @date    2017-09-18
+ * @date    2017-10-06
  *
  * @license
  * Copyright (C) 2011-2017 Almende B.V, http://almende.com
@@ -18329,9 +18329,9 @@ return /******/ (function(modules) { // webpackBootstrap
   Range.prototype._onMouseWheel = function (event) {
     // retrieve delta
     var delta = 0;
-    if (event.wheelDelta) {
+    if (event.wheelDeltaY) {
       /* IE/Opera. */
-      delta = event.wheelDelta / 120;
+      delta = event.wheelDeltaY / 120;
     } else if (event.detail) {
       /* Mozilla case. */
       // In Mozilla, sign of delta is different than in IE.
